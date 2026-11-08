@@ -1,0 +1,32 @@
+{
+  "index_name": "replace-with-index-name",
+  "primary_key": "objectID",
+  "record_fields": {
+    "objectID": "stable unique identifier",
+    "title": "human-readable searchable title",
+    "description": "short searchable summary",
+    "category": "facet value",
+    "updated_at": "ISO-8601 timestamp"
+  },
+  "searchable_attributes_order": [
+    "title",
+    "description"
+  ],
+  "attributes_for_faceting": [
+    "filterOnly(category)"
+  ],
+  "custom_ranking": [
+    "desc(updated_at)"
+  ],
+  "synonyms_and_rules": [],
+  "security_notes": [
+    "Never expose an Admin API key in browser code",
+    "Use a restricted Search API key for client-side search",
+    "Validate filter values and access rules on a trusted server"
+  ],
+  "open_questions": [
+    "Which attributes are essential to the user's search task?",
+    "Which filters are genuinely needed?",
+    "What is the data freshness requirement?"
+  ]
+}
