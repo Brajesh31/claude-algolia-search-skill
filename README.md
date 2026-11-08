@@ -90,3 +90,20 @@ Choose components based on the interaction required. Avoid adding widgets that d
 ## Practical Guidance
 
 A working search box is not enough. Evaluate whether users can find the right records, understand why results appear, refine the result set, and recover when no matches are found.
+
+
+## Supporting Resources
+
+| File | Purpose |
+|---|---|
+| [Index record contract](resources/index-record-contract-template.json) | Define stable record IDs, searchable attributes, facets, and security notes. |
+| [Search relevance test cases](resources/search-relevance-test-cases.csv) | Record representative queries and expected top results. |
+| [Indexing and search release checklist](resources/indexing-release-checklist.md) | Validate indexing, security, relevance, UI states, and release safety. |
+
+## Scope and version caution
+
+This skill focuses on frontend search integration, React InstantSearch, Next.js SSR considerations, indexing strategies, and relevance tuning. It is not a full administration guide for every Algolia account operation. Check installed package versions and current Algolia documentation before using code examples: package names, APIs, and recommended integration patterns can change. Keep Admin API keys server-side and use restricted search-only keys in browser code.
+
+## Upstream source and license
+
+The unchanged SKILL.md metadata attributes the skill to vibeship-spawner-skills and identifies Apache 2.0. The single root [LICENSE](LICENSE) remains the repository-level license and does not replace the upstream terms for the copied skill content. Review the upstream source terms before redistributing that content.
