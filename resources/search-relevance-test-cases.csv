@@ -1,0 +1,3 @@
+Query,Expected relevant record IDs,Must not appear,Typo or synonym case,Filter context,Observed top result,Pass,Notes
+,,,,,,,,
+"","","","","","","",""
